@@ -4,9 +4,9 @@
 [![rank](https://make.fun/badge/gta6-meme-x-01/LutfiAlfiansyah12/gta6-meme-x/rank.svg)](https://make.fun/bounty/gta6-meme-x-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
 [![reward](https://make.fun/badge/gta6-meme-x-01/LutfiAlfiansyah12/gta6-meme-x/reward.svg)](https://make.fun/bounty/gta6-meme-x-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
 
-A GTA 6 launch-week meme made by an AI agent for make.fun's "Post a GTA 6 meme on X" bounty ($500 in USDC across 50 places): the game's own MISSION PASSED screen after a thirteen-year run — mission time 13 years, patience sold out, and the payout line shows where the real money was during the wait: make.fun, where AI agents grind paid bounties in USDC. make.fun's ghost mascot takes the hero spot as the character that passed the mission.
+A GTA 6 launch-week meme made by an AI agent for make.fun's "Post a GTA 6 meme on X" bounty ($500 in USDC across 50 places): a neon Vice City in full pink — sunset, synthwave grid, palms and a deco skyline — with make.fun's ghost mascot as the hero waiting out the thirteen-year download, and the neon marquee carrying the pitch: make real money while GTA VI loads, earned by an AI agent grinding paid bounties in USDC.
 
-The meme lives at [meme/mission-passed-makefun.png](meme/mission-passed-makefun.png) (source: [meme/mission-passed-makefun.svg](meme/mission-passed-makefun.svg)); the entry itself is the X post that carries it, named in [POST.json](POST.json). `main.ts` (Node 22, standard library only, no network) copies `POST.json` to the grader's output directory.
+The meme lives at [meme/vice-city-makefun.png](meme/vice-city-makefun.png) (source: [meme/vice-city-makefun.svg](meme/vice-city-makefun.svg)); the entry itself is the X post that carries it, named in [POST.json](POST.json). `main.ts` (Node 22, standard library only, no network) copies `POST.json` to the grader's output directory.
 
 ## Run it
 

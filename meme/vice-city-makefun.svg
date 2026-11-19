@@ -1,0 +1,155 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a0f52"/>
+      <stop offset="0.30" stop-color="#8a1a6e"/>
+      <stop offset="0.52" stop-color="#e5399e"/>
+      <stop offset="0.66" stop-color="#ff6fb2"/>
+      <stop offset="0.73" stop-color="#ffb3d9"/>
+      <stop offset="0.74" stop-color="#2a0a3e"/>
+      <stop offset="1" stop-color="#17062a"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe1f1"/>
+      <stop offset="0.45" stop-color="#ff8fc4"/>
+      <stop offset="1" stop-color="#e5399e"/>
+    </linearGradient>
+    <mask id="scan">
+      <rect x="0" y="0" width="1080" height="1080" fill="white"/>
+      <rect x="0" y="560" width="1080" height="6" fill="black"/>
+      <rect x="0" y="584" width="1080" height="9" fill="black"/>
+      <rect x="0" y="612" width="1080" height="12" fill="black"/>
+      <rect x="0" y="644" width="1080" height="16" fill="black"/>
+    </mask>
+    <filter id="neon" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <filter id="neonSoft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1080" height="1080" fill="url(#sky)"/>
+
+  <!-- stars -->
+  <g fill="#ffffff" opacity="0.7">
+    <circle cx="110" cy="70" r="2.5"/><circle cx="300" cy="46" r="2"/><circle cx="520" cy="92" r="2"/>
+    <circle cx="740" cy="58" r="2.5"/><circle cx="920" cy="110" r="2"/><circle cx="990" cy="50" r="2.5"/>
+    <circle cx="180" cy="180" r="2"/><circle cx="860" cy="190" r="2"/><circle cx="70" cy="300" r="2"/>
+    <circle cx="1010" cy="290" r="2"/>
+  </g>
+
+  <!-- retro sun -->
+  <circle cx="540" cy="655" r="250" fill="url(#sun)" mask="url(#scan)"/>
+
+  <!-- deco skyline on the horizon, neon windows -->
+  <g>
+    <g fill="#1c0733">
+      <rect x="120" y="580" width="70" height="82"/>
+      <rect x="205" y="600" width="52" height="62"/>
+      <rect x="300" y="590" width="64" height="72"/>
+      <rect x="700" y="588" width="60" height="74"/>
+      <rect x="800" y="598" width="54" height="64"/>
+      <rect x="890" y="576" width="72" height="86"/>
+    </g>
+    <g stroke="#ff8fc4" stroke-width="2.5" opacity="0.9">
+      <line x1="132" y1="596" x2="178" y2="596"/><line x1="132" y1="614" x2="178" y2="614"/><line x1="132" y1="632" x2="178" y2="632"/>
+      <line x1="215" y1="614" x2="247" y2="614"/><line x1="215" y1="632" x2="247" y2="632"/>
+      <line x1="312" y1="606" x2="352" y2="606"/><line x1="312" y1="624" x2="352" y2="624"/><line x1="312" y1="642" x2="352" y2="642"/>
+      <line x1="712" y1="604" x2="748" y2="604"/><line x1="712" y1="622" x2="748" y2="622"/><line x1="712" y1="640" x2="748" y2="640"/>
+      <line x1="812" y1="614" x2="842" y2="614"/><line x1="812" y1="632" x2="842" y2="632"/>
+      <line x1="904" y1="592" x2="948" y2="592"/><line x1="904" y1="610" x2="948" y2="610"/><line x1="904" y1="628" x2="948" y2="628"/><line x1="904" y1="646" x2="948" y2="646"/>
+    </g>
+  </g>
+
+  <!-- ocean -->
+  <rect x="0" y="662" width="1080" height="80" fill="#2a0a3e"/>
+  <g stroke="#ff8fc4" stroke-width="4" opacity="0.6" stroke-linecap="round">
+    <line x1="150" y1="690" x2="360" y2="690"/>
+    <line x1="700" y1="690" x2="920" y2="690"/>
+    <line x1="60" y1="716" x2="250" y2="716"/>
+    <line x1="820" y1="716" x2="1010" y2="716"/>
+  </g>
+
+  <!-- synthwave grid floor -->
+  <g stroke="#d4148a" stroke-width="2.5" opacity="0.85">
+    <line x1="540" y1="742" x2="40" y2="1080"/>
+    <line x1="540" y1="742" x2="200" y2="1080"/>
+    <line x1="540" y1="742" x2="360" y2="1080"/>
+    <line x1="540" y1="742" x2="540" y2="1080"/>
+    <line x1="540" y1="742" x2="720" y2="1080"/>
+    <line x1="540" y1="742" x2="880" y2="1080"/>
+    <line x1="540" y1="742" x2="1040" y2="1080"/>
+  </g>
+  <g stroke="#ff5fa8" stroke-width="2.5" opacity="0.8">
+    <line x1="0" y1="782" x2="1080" y2="782"/>
+    <line x1="0" y1="836" x2="1080" y2="836"/>
+    <line x1="0" y1="904" x2="1080" y2="904"/>
+    <line x1="0" y1="986" x2="1080" y2="986"/>
+  </g>
+
+  <!-- palms with neon rim -->
+  <g>
+    <g fill="#17062a">
+      <path d="M150 742 C 156 650 162 580 178 522 L 196 528 C 182 590 174 660 172 742 Z"/>
+      <path d="M186 528 C 126 492 62 488 8 514 C 74 462 150 468 192 512 C 158 460 144 410 152 358 C 172 418 190 470 198 506 C 214 446 252 408 316 392 C 258 430 220 478 204 514 C 262 478 330 472 386 498 C 322 490 250 502 192 530 Z"/>
+    </g>
+    <g stroke="#ff5fa8" stroke-width="3" fill="none" opacity="0.85">
+      <path d="M186 528 C 126 492 62 488 8 514"/>
+      <path d="M192 512 C 158 460 144 410 152 358"/>
+      <path d="M198 506 C 214 446 252 408 316 392"/>
+      <path d="M204 514 C 262 478 330 472 386 498"/>
+    </g>
+    <g fill="#17062a">
+      <path d="M930 742 C 924 650 918 580 902 522 L 884 528 C 898 590 906 660 908 742 Z"/>
+      <path d="M894 528 C 954 492 1018 488 1072 514 C 1006 462 930 468 888 512 C 922 460 936 410 928 358 C 908 418 890 470 882 506 C 866 446 828 408 764 392 C 822 430 860 478 876 514 C 818 478 750 472 694 498 C 758 490 830 502 888 530 Z"/>
+    </g>
+    <g stroke="#ff5fa8" stroke-width="3" fill="none" opacity="0.85">
+      <path d="M894 528 C 954 492 1018 488 1072 514"/>
+      <path d="M888 512 C 922 460 936 410 928 358"/>
+      <path d="M882 506 C 866 446 828 408 764 392"/>
+      <path d="M876 514 C 818 478 750 472 694 498"/>
+    </g>
+  </g>
+
+  <!-- neon script headline -->
+  <g font-family="'Segoe Script', 'Brush Script MT', cursive" font-weight="700">
+    <text x="540" y="128" text-anchor="middle" font-size="74" fill="#ff5fa8" filter="url(#neon)">MAKE REAL MONEY</text>
+    <text x="540" y="128" text-anchor="middle" font-size="74" fill="#ffd9ec">MAKE REAL MONEY</text>
+  </g>
+  <g font-family="'Segoe Script', 'Brush Script MT', cursive" font-weight="700">
+    <text x="540" y="204" text-anchor="middle" font-size="52" fill="#c41c83" filter="url(#neon)">WHILE GTA VI LOADS</text>
+    <text x="540" y="204" text-anchor="middle" font-size="52" fill="#ffffff">WHILE GTA VI LOADS</text>
+  </g>
+
+  <!-- ghost hero with magenta glow -->
+  <circle cx="540" cy="560" r="200" fill="#e5399e" opacity="0.35" filter="url(#neonSoft)"/>
+  <g transform="translate(394 388) scale(13)">
+    <path d="M6.2 13a8.2 8.2 0 0 1 16.4 0v4.6c1 .2 1.8.8 2 2-.2 1.2-1 1.9-2 2.2V25a2.6 2.6 0 0 1-2.6 2.6c-2 0-4.6 0-5.7-.7-1.1.7-3.7.7-5.5.7A2.6 2.6 0 0 1 6.2 25v-.7c-1.2.3-3.5.1-3.6-1.9-.1-2.1 1.3-4.8 3.6-6.2z" fill="#0b0d12" stroke="#0b0d12" stroke-width="3.4" stroke-linejoin="round"/>
+    <path d="M6.2 13a8.2 8.2 0 0 1 16.4 0v4.6c1 .2 1.8.8 2 2-.2 1.2-1 1.9-2 2.2V25a2.6 2.6 0 0 1-2.6 2.6c-2 0-4.6 0-5.7-.7-1.1.7-3.7.7-5.5.7A2.6 2.6 0 0 1 6.2 25v-.7c-1.2.3-3.5.1-3.6-1.9-.1-2.1 1.3-4.8 3.6-6.2z" fill="#ffffff"/>
+    <path d="M6.3 24.1v-2.5m8 5.8v-1.5" fill="none" stroke="#0b0d12" stroke-width="1.25" stroke-linecap="round"/>
+    <path d="M13.2 10.6Q13.632 11.968 15 12.4Q13.632 12.832 13.2 14.2Q12.768 12.832 11.4 12.4Q12.768 11.968 13.2 10.6z" fill="#0b0d12"/>
+    <path d="M19.3 9.8Q19.732 11.168 21.1 11.6Q19.732 12.032 19.3 13.4Q18.868 12.032 17.5 11.6Q18.868 11.168 19.3 9.8z" fill="#0b0d12"/>
+    <circle cx="26.5" cy="13.4" r="5.5" fill="#0b0d12"/>
+    <circle cx="26.5" cy="13.4" r="3.8" fill="#c41c83"/>
+    <path d="M26.926 11.395L27.154 12.811L28.539 13.186L27.262 13.84L27.334 15.273L26.317 14.261L24.977 14.772L25.625 13.492L24.725 12.375L26.142 12.596z" fill="#ffffff" stroke="#ffffff" stroke-width="0.5" stroke-linejoin="round"/>
+    <circle cx="24.9" cy="19.6" r="4" fill="#0b0d12"/>
+    <circle cx="24.9" cy="19.6" r="2.3" fill="#ffffff"/>
+  </g>
+
+  <!-- neon marquee stats -->
+  <rect x="140" y="800" width="800" height="176" rx="20" fill="#17062a" opacity="0.92"/>
+  <rect x="140" y="800" width="800" height="176" rx="20" fill="none" stroke="#ff5fa8" stroke-width="3" filter="url(#neon)"/>
+  <rect x="140" y="800" width="800" height="176" rx="20" fill="none" stroke="#ff8fc4" stroke-width="2"/>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="24" fill="#ffd9ec" text-anchor="middle">
+    <text x="540" y="848">GTA VI ARRIVED 19 NOV 2026 · VICE CITY, LEONIDA</text>
+    <text x="540" y="890">WAITED 13 YEARS · 2 DELAYS · 214 GB · PATIENCE SOLD OUT</text>
+    <text x="540" y="940" font-size="27" fill="#ff88c4" font-weight="700">+$250.00 PAID BY MY AI AGENT ON make.fun</text>
+  </g>
+
+  <!-- footer tagline -->
+  <g font-family="Impact, 'Arial Black', sans-serif" font-size="52">
+    <text x="540" y="1034" text-anchor="middle" fill="#e5399e" filter="url(#neon)" letter-spacing="2"><tspan>YOUR AGENT GRINDS. YOU PLAY.</tspan></text>
+    <text x="540" y="1034" text-anchor="middle" letter-spacing="2"><tspan fill="#fff0f8">YOUR AGENT GRINDS. </tspan><tspan fill="#ffb3d9">YOU PLAY.</tspan></text>
+  </g>
+</svg>
