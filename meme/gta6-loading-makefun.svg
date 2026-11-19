@@ -1,0 +1,103 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#160a2e"/>
+      <stop offset="0.35" stop-color="#4b1660"/>
+      <stop offset="0.58" stop-color="#a11a72"/>
+      <stop offset="0.72" stop-color="#e8386d"/>
+      <stop offset="0.80" stop-color="#ff7a3d"/>
+      <stop offset="0.84" stop-color="#ffb347"/>
+      <stop offset="0.84" stop-color="#1a0f33"/>
+      <stop offset="1" stop-color="#120a26"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe66d"/>
+      <stop offset="0.5" stop-color="#ff9a4d"/>
+      <stop offset="1" stop-color="#ff4d8d"/>
+    </linearGradient>
+    <linearGradient id="vi" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd9ec"/>
+      <stop offset="0.45" stop-color="#ff9ad2"/>
+      <stop offset="1" stop-color="#e91e8c"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+    <mask id="scan">
+      <rect x="0" y="0" width="1080" height="1080" fill="white"/>
+      <rect x="0" y="600" width="1080" height="6" fill="black"/>
+      <rect x="0" y="622" width="1080" height="9" fill="black"/>
+      <rect x="0" y="648" width="1080" height="12" fill="black"/>
+      <rect x="0" y="678" width="1080" height="15" fill="black"/>
+    </mask>
+  </defs>
+
+  <rect x="0" y="0" width="1080" height="1080" fill="url(#sky)"/>
+
+  <!-- stars -->
+  <g fill="#ffffff" opacity="0.85">
+    <circle cx="120" cy="80" r="3"/><circle cx="300" cy="52" r="2"/><circle cx="520" cy="100" r="2.5"/>
+    <circle cx="760" cy="60" r="3"/><circle cx="940" cy="120" r="2"/><circle cx="860" cy="210" r="2.5"/>
+    <circle cx="200" cy="210" r="2.5"/><circle cx="420" cy="170" r="2"/><circle cx="1010" cy="52" r="3"/>
+    <circle cx="70" cy="320" r="2"/><circle cx="980" cy="320" r="2"/>
+  </g>
+
+  <!-- retro sun, horizon at y=770 -->
+  <circle cx="540" cy="775" r="252" fill="url(#sun)" mask="url(#scan)"/>
+
+  <!-- ocean -->
+  <rect x="0" y="772" width="1080" height="308" fill="#1a0f33"/>
+  <g stroke="#ff5fa8" stroke-width="5" opacity="0.5" stroke-linecap="round">
+    <line x1="150" y1="830" x2="360" y2="830"/>
+    <line x1="720" y1="830" x2="930" y2="830"/>
+    <line x1="60" y1="890" x2="240" y2="890"/>
+    <line x1="840" y1="890" x2="1020" y2="890"/>
+    <line x1="200" y1="955" x2="430" y2="955"/>
+    <line x1="650" y1="955" x2="880" y2="955"/>
+    <line x1="110" y1="1025" x2="390" y2="1025"/>
+    <line x1="690" y1="1025" x2="970" y2="1025"/>
+  </g>
+
+  <!-- palms -->
+  <g fill="#0d0a1c">
+    <path d="M130 772 C 136 680 142 610 158 556 L 174 562 C 162 622 154 692 152 772 Z"/>
+    <path d="M164 560 C 110 530 60 528 18 548 C 68 508 126 512 166 548 C 138 506 126 464 132 424 C 150 472 166 512 174 542 C 186 496 214 466 264 452 C 220 480 192 516 180 546 C 224 516 274 512 314 532 C 266 528 214 540 172 562 Z"/>
+    <path d="M950 772 C 944 680 938 610 922 556 L 906 562 C 918 622 926 692 928 772 Z"/>
+    <path d="M916 560 C 970 530 1020 528 1062 548 C 1012 508 954 512 914 548 C 942 506 954 464 948 424 C 930 472 914 512 906 542 C 894 496 866 466 816 452 C 860 480 888 516 900 546 C 856 516 806 512 766 532 C 814 528 866 540 908 562 Z"/>
+  </g>
+
+  <!-- title -->
+  <text x="540" y="128" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-weight="700" font-size="36" letter-spacing="14" fill="#ffffff">GRAND THEFT AUTO</text>
+  <text x="540" y="308" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="700" font-size="205" fill="#e91e8c" opacity="0.22" transform="translate(0 10)" filter="url(#glow)">VI</text>
+  <text x="540" y="308" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="700" font-size="205" fill="url(#vi)" stroke="#5c0f3e" stroke-width="7">VI</text>
+
+  <!-- loading panel -->
+  <rect x="150" y="418" width="780" height="104" rx="20" fill="#0d0a1c" opacity="0.9"/>
+  <text x="540" y="464" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-weight="600" font-size="31" letter-spacing="2" fill="#ffd9ec">DOWNLOADING&#8230; 13 YEARS ELAPSED</text>
+  <text x="540" y="504" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-weight="600" font-size="25" fill="#ff9ad2">272 GB REMAINING</text>
+
+  <!-- progress bar -->
+  <rect x="140" y="620" width="800" height="42" rx="21" fill="#0d0a1c"/>
+  <rect x="146" y="626" width="776" height="30" rx="15" fill="#c41c83"/>
+  <text x="540" y="650" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-weight="800" font-size="26" fill="#ffffff">99%</text>
+
+  <!-- ghost mascot sitting on the bar's right end (make.fun press kit mark.svg) -->
+  <g transform="translate(766 502) scale(8.4)">
+    <path d="M6.2 13a8.2 8.2 0 0 1 16.4 0v4.6c1 .2 1.8.8 2 2-.2 1.2-1 1.9-2 2.2V25a2.6 2.6 0 0 1-2.6 2.6c-2 0-4.6 0-5.7-.7-1.1.7-3.7.7-5.5.7A2.6 2.6 0 0 1 6.2 25v-.7c-1.2.3-3.5.1-3.6-1.9-.1-2.1 1.3-4.8 3.6-6.2z" fill="#0b0d12" stroke="#0b0d12" stroke-width="3.4" stroke-linejoin="round"/>
+    <path d="M6.2 13a8.2 8.2 0 0 1 16.4 0v4.6c1 .2 1.8.8 2 2-.2 1.2-1 1.9-2 2.2V25a2.6 2.6 0 0 1-2.6 2.6c-2 0-4.6 0-5.7-.7-1.1.7-3.7.7-5.5.7A2.6 2.6 0 0 1 6.2 25v-.7c-1.2.3-3.5.1-3.6-1.9-.1-2.1 1.3-4.8 3.6-6.2z" fill="#ffffff"/>
+    <path d="M6.3 24.1v-2.5m8 5.8v-1.5" fill="none" stroke="#0b0d12" stroke-width="1.25" stroke-linecap="round"/>
+    <path d="M13.2 10.6Q13.632 11.968 15 12.4Q13.632 12.832 13.2 14.2Q12.768 12.832 11.4 12.4Q12.768 11.968 13.2 10.6z" fill="#0b0d12"/>
+    <path d="M19.3 9.8Q19.732 11.168 21.1 11.6Q19.732 12.032 19.3 13.4Q18.868 12.032 17.5 11.6Q18.868 11.168 19.3 9.8z" fill="#0b0d12"/>
+    <circle cx="26.5" cy="13.4" r="5.5" fill="#0b0d12"/>
+    <circle cx="26.5" cy="13.4" r="3.8" fill="#c41c83"/>
+    <path d="M26.926 11.395L27.154 12.811L28.539 13.186L27.262 13.84L27.334 15.273L26.317 14.261L24.977 14.772L25.625 13.492L24.725 12.375L26.142 12.596z" fill="#ffffff" stroke="#ffffff" stroke-width="0.5" stroke-linejoin="round"/>
+    <circle cx="24.9" cy="19.6" r="4" fill="#0b0d12"/>
+    <circle cx="24.9" cy="19.6" r="2.3" fill="#ffffff"/>
+  </g>
+
+  <!-- caption -->
+  <text x="540" y="902" text-anchor="middle" font-family="Impact, 'Arial Black', sans-serif" font-size="92" fill="#ffffff" stroke="#3d0a29" stroke-width="3" letter-spacing="3">13 YEARS OF LOADING</text>
+  <text x="540" y="992" text-anchor="middle" font-family="Impact, 'Arial Black', sans-serif" font-size="56" letter-spacing="2">
+    <tspan fill="#ffd9ec">MAKE REAL MONEY ON </tspan><tspan fill="#ff88c4" font-weight="700">make.fun</tspan>
+  </text>
+</svg>
